@@ -1,25 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Pammy's Portfolio</title>
+<title>Pammy Poor</title>
 <style type="text/css">
-.container-fluid {
-	background-image: linear-gradient(45deg, #6303B1, #ff0099);
+
+html, body {
+	height: 100%;
+	font-family: "Times New Roman", Times, serif;
+	background: #f7f7f7;
+}
+
+#wrapper {
+	height: calc(100% - 5px);
+}
+
+#wrapper {
+	width: 100%;
+	position: relative;
+	margin: auto;
+	box-sizing: border-box;
+}
+
+#header {
+	height: 100vh;
+	text-align: center;
+	padding: .5em;
+	font-size: 250%;
+}
+#headerImg {
+	max-width: 100%;
+	height: auto;
+	weight: auto;
+}
+
+#menu {
+	position: fixed;
+	width: 100%;
 }
 
 
+#about {
+	height: 100vh;
+	text-align: center;
+	padding: .2em;
+	color: #ffd66b;
+	font-size: 250%;
+}
+
+h1 {
+	display: block;
+	font-size: 2em;
+	text-align: left;
+	line-height: 0.2em;
+	color: #ff570c;
+}
+
+h2 {
+	text-align: left;
+	color: #323643;
+}
+
+nav {
+	width: 100%;
+	text-align:center;
+}
+
+nav a {
+	text-decoration: none;
+	color: #323643;
+}
+
+nav li {
+	display: inline-block;
+	margin: 0 15px;
+	font-size: 100%;
+	font-weight: 500;
+	padding-right: 150px;
+
+}
+
+.sticky {
+	position: -webkit-sticky;
+	position: fixed;
+	top: 0;
+}
+
+#aboutCol1 {
+	float:left;
+	margin: 0;
+	width: 50%;
+}
+
+#myPicture {
+	top: 45px;
+	width: 50%;
+	padding-top: 30%;
+}
+
+#aboutCol2 {
+	float:left;
+	margin: 0;
+	width: 50%;
+	color: #606470;
+	text-align:justify;
+	font-size: 0.5em;
+	padding-top: 10%;
+}
+
+p {
+	padding-right: 55px;
+}
+
+#work {
+	padding-top: 5%;
+	height: 100%;
+}
+
+.projectCol {
+	width: 50%;
+	height: 70%;
+	float: left;
+}
+
+.col {
+	width: 25%;
+	float: left;
+	height:30%
+}
+
+.col p {
+	color: #606470;
+}
+
+details {
+	width: 80%;
+	padding: 0.5rem 0;
+	border-top: 1px solid black;
+	position: relative;
+	cursor: pointer;
+	font-size: 1rem;
+	font-weight: 300;
+	list-style: none;
+}
+
+details summary:after {
+	content: "+";
+	color: block;
+	position: absolute;
+	font-size: 1rem;
+	right: 0;
+	line-height: 0;
+	margin-top: 0.5rem;
+	transform-origin:center;
+	transition: 200ms linear;
+}
+
+details p {
+	font-size: 0.95rem;
+	margin: 0 0 1rem;
+	padding-top: 1rem;
+}
+
+details[open] summary ~ * {
+	animation: open 0.3s ease-in-out;
+}
+
+@keyframes open {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+details[open] summary:after {
+	transform: rotate(45deg);
+	font-size: 2rem;
+}
+
+details > summary::-webkit-details-marker { display: none; }
+
+.projectImg{
+	max-width: 80%;
+}
 </style>
 </head>
 
 <body>
-<div class="container-fluid">
-	<section id="top-greeting">
-		<div class="nav-menu">
-			<nav class = "navbar">
-		
+<div id="wrapper">
+	<div id = "header">
+		<a href = "index.html"><img id = "headerImg" src="header.png"></a>
+		<nav id="menu">
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href ="#work">PROJECTS </a></li>
+				<li><a href="#about">ABOUT</a></li>
+				<li><a href ="#contact">CONTACT</a></li>
+			</ul>
+		</nav>
+	</div>
+	<script>
+
+		var navbar = document.getElementById("menu");
+		var sticky = navbar.offsetTop;
+
+		window.onscroll = function() { scrollNav()};
+
+		function scrollNav() {
+			if(window.pageYOffset >= sticky) {
+				navbar.classList.add("sticky");
+			} else {
+				navbar.classList.remove("sticky");
+			}
+		}
+	</script>
+	<div id = "work">
+		<div class = "projectCol">
+			<h1>Project 1</h1>
+			<img class = "projectImg" src="placeholder.png">
+			<details>
+				<summary>Details</summary>
+				<p>TEST</p>
+			</details>
+			<details>
+				<summary>Features</summary>
+				<p>TEST</p>
+			</details>
+			<details>
+				<summary>Specifications</summary>
+				<p>TEST</p>
+			</details>
 		</div>
-	</section>
+		<div class = "projectCol">
+			<h1>Project 2</h1>
+			<img class = "projectImg" src="placeholder.png">
+			<details>
+				<summary>Details</summary>
+				<p>TEST</p>
+			</details>
+			<details>
+				<summary>Features</summary>
+				<p>TEST</p>
+			</details>
+			<details>
+				<summary>Specifications</summary>
+				<p>TEST</p>
+			</details>
+		</div>
+		<h1>Skills</h1>
+		<div class = "col">
+			<h2>Programming Languages</h2>
+			<p>Java</p>
+		</div>
+		<div class = "col">
+
+			<h2>Web Development</h2>
+			<p>html, css</p>
+		</div>
+		<div class = "col">
+			<h2>Databases</h2>
+			<p>mySql, Derby</p>
+		</div>
+		<div class = "col">
+			<h2>More</h2>
+			<p>Version Control</p>
+		</div>
+
+	</div>
+
+	<div id="about">
+		<div id="aboutCol1">
+			<img id = "myPicture" src="me.png">
+		</div>
+		<div id="aboutCol2">
+			<h1>Hello, I'm Pammy</h1>
+			<p>
+				When I turned ten my dad gave me my very first computer, or rather he handed me down his old computer.
+				It wasn't the newest or latest in technology, but it was mine. Ever since then, I've been passionate
+				about learning and understanding technology. Currently, I am a Computer Science Student at California
+				State University, Long Beach with an expected graduation date of June 2022. Beyond college, I hope to
+				pursue a career in software engineering. I am always open to new opportunities that will allow me to
+				grow and gain more experience. Feel free to reach out to me!
+			</p>
+		</div>
+	</div>
+
+
+
+
+
+
 </div>
+
 
 
 </body>
