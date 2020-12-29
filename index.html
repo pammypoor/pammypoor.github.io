@@ -79,6 +79,11 @@ nav li {
 
 }
 
+nav a:hover {
+	color: #ff570c;
+	transition: all 0.5s ease;
+}
+
 .sticky {
 	position: -webkit-sticky;
 	position: fixed;
@@ -107,13 +112,15 @@ nav li {
 	padding-top: 10%;
 }
 
-p {
-	padding-right: 55px;
+#aboutCol2 p {
+	padding-right: 10%;
 }
 
 #work {
-	padding-top: 5%;
+
+
 	height: 100%;
+	padding-left: 5%
 }
 
 .projectCol {
@@ -130,11 +137,13 @@ p {
 
 .col p {
 	color: #606470;
+	line-height: 0;
 }
 
 details {
 	width: 80%;
-	padding: 0.5rem 0;
+	padding: 0.5rem 0 0 0;
+
 	border-top: 1px solid black;
 	position: relative;
 	cursor: pointer;
@@ -217,6 +226,7 @@ details > summary::-webkit-details-marker { display: none; }
 	<div id = "work">
 		<div class = "projectCol">
 			<h1>Project 1</h1>
+			<h2>GetGit</h2>
 			<img class = "projectImg" src="placeholder.png">
 			<details>
 				<summary>Details</summary>
@@ -233,6 +243,7 @@ details > summary::-webkit-details-marker { display: none; }
 		</div>
 		<div class = "projectCol">
 			<h1>Project 2</h1>
+			<h2>Coming Soon...</h2>
 			<img class = "projectImg" src="placeholder.png">
 			<details>
 				<summary>Details</summary>
@@ -250,20 +261,25 @@ details > summary::-webkit-details-marker { display: none; }
 		<h1>Skills</h1>
 		<div class = "col">
 			<h2>Programming Languages</h2>
-			<p>Java</p>
+			<p>Java</p><br>
+			<p>C</p><br>
+			<p>Python</p>
 		</div>
 		<div class = "col">
-
 			<h2>Web Development</h2>
-			<p>html, css</p>
+			<p>Javascript</p><br>
+			<p>HTML & CSS </p><br>
+			<p>Node.js</p>
 		</div>
 		<div class = "col">
 			<h2>Databases</h2>
-			<p>mySql, Derby</p>
+			<p>mySql</p><br>
+			<p>Derby</p>
 		</div>
 		<div class = "col">
 			<h2>More</h2>
-			<p>Version Control</p>
+			<p>Version Control</p><br>
+			<p>Agile</p>
 		</div>
 
 	</div>
