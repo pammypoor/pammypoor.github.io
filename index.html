@@ -88,6 +88,7 @@ nav a:hover {
 	position: -webkit-sticky;
 	position: fixed;
 	top: 0;
+	background: #f7f7f7;
 }
 
 #aboutCol1 {
@@ -129,15 +130,30 @@ nav a:hover {
 	float: left;
 }
 
-.col {
+.skill-col {
 	width: 25%;
 	float: left;
-	height:30%
+	height: 30%;
 }
 
-.col p {
+.skill-col p {
 	color: #606470;
 	line-height: 0;
+}
+
+.skill-col li {
+	background: #ff570c;
+	border-radius: 5px;
+	color: #f7f7f7;
+	display: inline-block;
+	list-style: none;
+	margin: 15px 15px 0 0;
+	padding: 10px;
+	text-align: justify;
+}
+
+.skill-col li:hover {
+	background: black;
 }
 
 details {
@@ -230,7 +246,7 @@ details > summary::-webkit-details-marker { display: none; }
 			<img class = "projectImg" src="placeholder.png">
 			<details>
 				<summary>Details</summary>
-				<p>TEST</p>
+				<p>GetGit creates a dashboard for a user entered github account.</p>
 			</details>
 			<details>
 				<summary>Features</summary>
@@ -238,7 +254,8 @@ details > summary::-webkit-details-marker { display: none; }
 			</details>
 			<details>
 				<summary>Specifications</summary>
-				<p>TEST</p>
+				<p>Programming Language(s): Javascript, HTML/CSS, Node.JS</p><br>
+				<p>API(s): Cheerio</p>
 			</details>
 		</div>
 		<div class = "projectCol">
@@ -247,7 +264,7 @@ details > summary::-webkit-details-marker { display: none; }
 			<img class = "projectImg" src="placeholder.png">
 			<details>
 				<summary>Details</summary>
-				<p>TEST</p>
+				<p>TEST </p>
 			</details>
 			<details>
 				<summary>Features</summary>
@@ -259,27 +276,27 @@ details > summary::-webkit-details-marker { display: none; }
 			</details>
 		</div>
 		<h1>Skills</h1>
-		<div class = "col">
+		<div class = "skill-col">
 			<h2>Programming Languages</h2>
-			<p>Java</p><br>
-			<p>C</p><br>
-			<p>Python</p>
+			<li>Java</li>
+			<li>C</li>
+			<li>Python</li>
 		</div>
-		<div class = "col">
+		<div class = "skill-col">
 			<h2>Web Development</h2>
-			<p>Javascript</p><br>
-			<p>HTML & CSS </p><br>
-			<p>Node.js</p>
+			<li>Javascript</li>
+			<li>HTML/CSS</li>
+			<li>Node.js</li>
 		</div>
-		<div class = "col">
+		<div class = "skill-col">
 			<h2>Databases</h2>
-			<p>mySql</p><br>
-			<p>Derby</p>
+			<li>mySql</li>
+			<li>Derby</li>
 		</div>
-		<div class = "col">
+		<div class = "skill-col">
 			<h2>More</h2>
-			<p>Version Control</p><br>
-			<p>Agile</p>
+			<li>Version Control</li>
+			<li>Agile</li>
 		</div>
 
 	</div>
