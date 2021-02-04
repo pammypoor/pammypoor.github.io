@@ -4,233 +4,253 @@
 <title>Pammy Poor</title>
 <style type="text/css">
 
-html, body {
-	height: 100%;
-	font-family: "Times New Roman", Times, serif;
-	background: #f7f7f7;
-}
-
-#wrapper {
-	height: calc(100% - 5px);
-}
-
-#wrapper {
-	width: 100%;
-	position: relative;
-	margin: auto;
-	box-sizing: border-box;
-}
-
-#header {
-	height: 100vh;
-	text-align: center;
-	padding: .5em;
-	font-size: 250%;
-}
-#headerImg {
-	max-width: 100%;
-	height: auto;
-	weight: auto;
-}
-
-#menu {
-	position: fixed;
-	width: 100%;
-}
-
-
-#about {
-	height: 100vh;
-	text-align: center;
-	padding: .2em;
-	color: #ffd66b;
-	font-size: 250%;
-}
-
-h1 {
-	display: block;
-	font-size: 2em;
-	text-align: left;
-	line-height: 0.2em;
-	color: #ff570c;
-}
-
-h2 {
-	text-align: left;
-	color: #323643;
-}
-
-nav {
-	width: 100%;
-	text-align:center;
-}
-
-nav a {
-	text-decoration: none;
-	color: #323643;
-}
-
-nav li {
-	display: inline-block;
-	margin: 0 15px;
-	font-size: 100%;
-	font-weight: 500;
-	padding-right: 150px;
-
-}
-
-nav a:hover {
-	color: #ff570c;
-	transition: all 0.5s ease;
-}
-
-.sticky {
-	position: -webkit-sticky;
-	position: fixed;
-	top: 0;
-	background: #f7f7f7;
-}
-
-#aboutCol1 {
-	float:left;
-	margin: 0;
-	width: 50%;
-}
-
-#myPicture {
-	top: 45px;
-	width: 50%;
-	padding-top: 30%;
-}
-
-#aboutCol2 {
-	float:left;
-	margin: 0;
-	width: 50%;
-	color: #606470;
-	text-align:justify;
-	font-size: 0.5em;
-	padding-top: 10%;
-}
-
-#aboutCol2 p {
-	padding-right: 10%;
-}
-
-#work {
-
-
-	height: 100%;
-	padding-left: 5%
-}
-
-.projectCol {
-	width: 50%;
-	height: 70%;
-	float: left;
-}
-
-.skill-col {
-	width: 25%;
-	float: left;
-	height: 30%;
-}
-
-.skill-col p {
-	color: #606470;
-	line-height: 0;
-}
-
-.skill-col li {
-	background: #ff570c;
-	border-radius: 5px;
-	color: #f7f7f7;
-	display: inline-block;
-	list-style: none;
-	margin: 15px 15px 0 0;
-	padding: 10px;
-	text-align: justify;
-}
-
-.skill-col li:hover {
-	background: black;
-}
-
-details {
-	width: 80%;
-	padding: 0.5rem 0 0 0;
-
-	border-top: 1px solid black;
-	position: relative;
-	cursor: pointer;
-	font-size: 1rem;
-	font-weight: 300;
-	list-style: none;
-}
-
-details summary:after {
-	content: "+";
-	color: block;
-	position: absolute;
-	font-size: 1rem;
-	right: 0;
-	line-height: 0;
-	margin-top: 0.5rem;
-	transform-origin:center;
-	transition: 200ms linear;
-}
-
-details p {
-	font-size: 0.95rem;
-	margin: 0 0 1rem;
-	padding-top: 1rem;
-}
-
-details[open] summary ~ * {
-	animation: open 0.3s ease-in-out;
-}
-
-@keyframes open {
-	0% {
-		opacity: 0;
+	:root {
+		--body-background: #7A9179;
+		--header-background: #7A9179;
+		--header-color: white;
+		--sticky-background: --body-background;
+		--about-color: #ffd66b;
+		--menu-header-color: #e5e4cc;
+		--menu-header-hover-color: #1E3226;
+		--h1-color: #1E3226;
+		--h2-color: #323643;
+		--skills-color: #f7f7f7;
+		--skills-background: #1E3226;
+		--skills-hover-color: black;
 	}
-	100% {
-		opacity: 1;
+	body {
+		margin: 0;
+		background: var(--body-background);
 	}
-}
-details[open] summary:after {
-	transform: rotate(45deg);
-	font-size: 2rem;
-}
 
-details > summary::-webkit-details-marker { display: none; }
+	h1 {
+		color: var(--h1-color);
+	}
 
-.projectImg{
-	max-width: 80%;
-}
+	h2 {
+		color: var(--h2-color);
+	}
+
+	.header {
+		overflow: hidden;
+		background-color: var(--header-background);
+		padding: 20px 10px;
+		font-size: 200%;
+		display: inline-block;
+		width: 100%;
+
+	}
+	.header a{
+		float: left;
+		text-align: center;
+		color: var(--menu-header-color);
+		text-decoration: none;
+
+	}
+
+	#header-nav img {
+		float: left;
+		padding-left: 25px;
+	}
+
+	#header-right a{
+		display: inline-block;
+		float: right;
+		padding-right: 150px;
+
+	}
+
+	#header-right li {
+		display: inline-block;
+		float: right;
+	}
+
+
+	.header a:hover {
+		color: var(--menu-header-hover-color);
+		text-decoration: underline;
+		text-decoration-style: wavy;
+	}
+
+	.sticky {
+		position: -webkit-sticky;
+		top: 0;
+		background: var(--sticky-background) !important;
+	}
+
+	.vertical {
+		position: absolute;
+		transform: rotate(-90deg);
+		bottom: 0;
+		right: 0;
+		z-index: 10;
+		transform-origin: bottom center;
+	}
+
+	.about {
+		height: 75vh;
+		padding: .2em;
+		color: var(--about-color);
+		font-size: 250%;
+	}
+
+	#aboutPhoto {
+		position: absolute;
+		float:left;
+		margin: 0;
+		width: 50%;
+		top: 15%;
+		padding-left: 10%;
+		padding-top: 15%;
+	}
+
+	#myPicture {
+		width: 50%;
+		object-fit: cover;
+		box-shadow: 10px 15px 25px 0 rgba(0,0,0,.2);
+		display: block;
+		transition: all .5s cubic-bezier(0.645, 0.045, 0.355,1);
+		margin-top: -10px;
+	}
+
+	#aboutPhoto h1 {
+		font-size: 5vw;
+		position: absolute;
+		z-index: 1;
+		transform: translate(-25%, -65%);
+		margin: 0;
+		line-height: 1.2;
+	}
+
+	#aboutPhoto:hover img {
+		box-shadow: 1px 1px 10px 0 rgba(0,0,0,.1);
+	}
+
+	#aboutMe {
+		width: 50%;
+		float: right;
+		text-align: justify;
+		font-size: 1vw;
+	}
+
+	#aboutMe p {
+		padding-right: 10%;
+		padding-top: 40%;
+	}
+
+	.work {
+		height:75vh;;
+		padding-left: 5%;
+	}
+
+	.projectCol {
+		width: 50%;
+		height: 50%;
+		float: left;
+	}
+	.skill-col {
+		width: 25%;
+		float: left;
+		height: 30%;
+	}
+
+	.skill-col p {
+		line-height: 0;
+	}
+
+	.skill-col li {
+		background: var(--skills-background);
+		border-radius: 5px;
+		color: var(--skills-color);
+		display: inline-block;
+		list-style: none;
+		margin: 15px 15px 0 0;
+		padding: 10px;
+		text-align: justify;
+	}
+
+	.skill-col li:hover {
+		background: var(--skills-hover-color);
+	}
+
+	details {
+		width: 80%;
+		padding: 0.5rem 0 0 0;
+		border-top: 1px solid black;
+		position: relative;
+		cursor: pointer;
+		font-size: 1rem;
+		font-weight: 300;
+		list-style: none;
+	}
+
+	details summary:after {
+		content: "+";
+		color: black;
+		position: absolute;
+		font-size: 1rem;
+		right: 0;
+		margin-top: 0.5rem;
+		transform-origin:center;
+		transition: 200ms linear;
+	}
+
+	details p {
+		font-size: 0.95rem;
+		margin: 0 0 1rem;
+		padding-top: 1rem;
+	}
+
+	details[open] summary ~ * {
+		animation: open 0.3s ease-in-out;
+	}
+
+	@keyframes open {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+	details[open] summary:after {
+		transform: rotate(45deg);
+		font-size: 2rem;
+	}
+
+	details > summary::-webkit-details-marker { display: none; }
+
+	.projectImg{
+		max-width: 80%;
+	}
+
+	.contact {
+		height: 25vh;
+		padding-left: 5%;
+		padding-top: 5%;
+	}
+
 </style>
 </head>
 
 <body>
-<div id="wrapper">
-	<div id = "header">
-		<a href = "index.html"><img id = "headerImg" src="header.png"></a>
-		<nav id="menu">
-			<ul>
-				<li><a href="index.html">HOME</a></li>
-				<li><a href ="#work">PROJECTS </a></li>
-				<li><a href="#about">ABOUT</a></li>
-				<li><a href ="#contact">CONTACT</a></li>
-			</ul>
-		</nav>
+
+	<div class = "header">
+		<div id="header-nav">
+			<a href = "index.html" class = "headerImg"><img  src="header.png" height="50px"></a>
+			<nav id = "header-right">
+				<ul>
+					<li><a href = "#contactSection">CONTACT</a></li>
+					<li><a href = "#workSection">WORK</a></li>
+					<li><a href = "#aboutSection">ABOUT</a></li>
+				</ul>
+			</nav>
+		</div>
 	</div>
 	<script>
-
-		var navbar = document.getElementById("menu");
+		var navbar = document.getElementById("header-nav");
 		var sticky = navbar.offsetTop;
-
 		window.onscroll = function() { scrollNav()};
-
 		function scrollNav() {
 			if(window.pageYOffset >= sticky) {
 				navbar.classList.add("sticky");
@@ -239,42 +259,22 @@ details > summary::-webkit-details-marker { display: none; }
 			}
 		}
 	</script>
-	<div id = "work">
-		<div class = "projectCol">
-			<h1>Project 1</h1>
-			<h2>GetGit</h2>
-			<img class = "projectImg" src="placeholder.png">
-			<details>
-				<summary>Details</summary>
-				<p>GetGit creates a dashboard for a user entered github account.</p>
-			</details>
-			<details>
-				<summary>Features</summary>
-				<p>TEST</p>
-			</details>
-			<details>
-				<summary>Specifications</summary>
-				<p>Programming Language(s): Javascript, HTML/CSS, Node.JS</p><br>
-				<p>API(s): Cheerio</p>
-			</details>
+	<div class = "about" id = "aboutSection">
+		<div id = "aboutPhoto">
+			<h1>Pammy <br> Poor</h1>
+			<img id = "myPicture" src="me.png">
 		</div>
-		<div class = "projectCol">
-			<h1>Project 2</h1>
-			<h2>Coming Soon...</h2>
-			<img class = "projectImg" src="placeholder.png">
-			<details>
-				<summary>Details</summary>
-				<p>TEST </p>
-			</details>
-			<details>
-				<summary>Features</summary>
-				<p>TEST</p>
-			</details>
-			<details>
-				<summary>Specifications</summary>
-				<p>TEST</p>
-			</details>
+		<div id = "aboutMe">
+			<p>
+				Hi There! my name is Pammy Poor. <br>
+				Currently, I am a Computer Science Student at California
+				State University, Long Beach with an expected graduation date of June 2022. Beyond college, I hope to
+				pursue a career in software engineering. I am always open to new opportunities that will allow me to
+				grow and gain more experience. Feel free to reach out to me!
+			</p>
 		</div>
+	</div>
+	<div class = "work" id = "workSection">
 		<h1>Skills</h1>
 		<div class = "skill-col">
 			<h2>Programming Languages</h2>
@@ -298,34 +298,34 @@ details > summary::-webkit-details-marker { display: none; }
 			<li>Version Control</li>
 			<li>Agile</li>
 		</div>
+		<div class = "projectCol">
+			<h1>Project 1</h1>
+			<h2>GetGit</h2>
+			<a href = "https://github.com/pammypoor/GetGit" target="_blank"><img class = "projectImg" src="placeholder.png"></a>
+			<details>
+				<summary>Details</summary>
+				<p>GetGit creates a dashboard for a user entered github account.</p>
+			</details>
+			<details>
+				<summary>Features</summary>
+				<p>TEST</p>
+			</details>
+			<details>
+				<summary>Specifications</summary>
+				<p>Programming Language(s): Javascript, HTML/CSS, Node.JS</p>
+				<p>API(s): Cheerio</p>
+			</details>
+		</div>
+		<div class = "projectCol"></div>
 
 	</div>
+	<div class = "contact" id="contactSection">
+		<h1>Get in touch with me!</h1>
+		<a href = "https://www.linkedin.com/in/pammypoor/" target="_blank"><img class = "icon" src="LinkedIn.png" height = "50px;"></a>
+		<a href = "https://github.com/pammypoor" target="_blank"><img class = "icon" src="Github.png" height = "50px;"></a>
+		<a href = "https://twitter.com/pampoor" target="_blank"><img class = "icon" src="Twitter.png" height = "50px;"></a>
 
-	<div id="about">
-		<div id="aboutCol1">
-			<img id = "myPicture" src="me.png">
-		</div>
-		<div id="aboutCol2">
-			<h1>Hello, I'm Pammy</h1>
-			<p>
-				When I turned ten my dad gave me my very first computer, or rather he handed me down his old computer.
-				It wasn't the newest or latest in technology, but it was mine. Ever since then, I've been passionate
-				about learning and understanding technology. Currently, I am a Computer Science Student at California
-				State University, Long Beach with an expected graduation date of June 2022. Beyond college, I hope to
-				pursue a career in software engineering. I am always open to new opportunities that will allow me to
-				grow and gain more experience. Feel free to reach out to me!
-			</p>
-		</div>
 	</div>
-
-
-
-
-
-
-</div>
-
-
 
 </body>
 </html>
