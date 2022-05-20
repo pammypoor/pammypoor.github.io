@@ -9,6 +9,10 @@ class App extends React.Component {
   constructor(props){
     super(props);
   }
+  
+  componentDidMount() {
+    document.title = "Pamela Poor"
+  }
 
   render() {
     return (

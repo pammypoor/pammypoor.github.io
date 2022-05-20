@@ -1,0 +1,12 @@
+.skills-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;  
+}
+.skills-left {
+    color: #283618;
+    padding-right: 25px;
+}
+.skills-right {
+    color: #283618;
+    padding-left: 25px;
+}

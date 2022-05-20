@@ -1,11 +1,10 @@
 import React from "react";
 import TypeAnimation from 'react-type-animation';
 import {FaGithub, FaLinkedin, FaTwitterSquare} from 'react-icons/fa';
-
-import "./AboutMe.css";
 import headshot from "../../assets/headshot.PNG";
 import { IconContext } from "react-icons";
 
+import "./AboutMe.css";
 
 class AboutMe extends React.PureComponent {
     constructor(props){
@@ -23,10 +22,10 @@ class AboutMe extends React.PureComponent {
                             <h2>Pamela Poor</h2>
                             <h3>Freelance Software Developer</h3>
                             <ul class = "icons">
-                                <IconContext.Provider value={{ color: "red", size: "2em"}}>
-                                    <li><FaGithub/></li>
-                                    <li><FaLinkedin/></li>
-                                    <li><FaTwitterSquare/></li>
+                                <IconContext.Provider value={{ color: "#283618", size: "2em"}}>
+                                    <li><a href = "https://github.com/pammypoor" target="_blank"><FaGithub/></a></li>
+                                    <li><a href = "https://www.linkedin.com/in/pammypoor/" target="_blank"><FaLinkedin/></a></li>
+                                    <li><a href = "https://twitter.com/pampoor" target="_blank"><FaTwitterSquare/></a></li>
                                 </IconContext.Provider>
                             </ul>
                         </div>
@@ -43,7 +42,7 @@ class AboutMe extends React.PureComponent {
                             studying new technologies. Check out the languages I know below or head over to my projects to take a look at my work.
                         </p>
                         <p>
-                            My personal interests revolve around working with my hands. When I'm not coding, I like to work on my car or build keyboards. 
+                            My personal interests revolve around working with my hands. When I'm not coding, I like to work on my car or building keyboards. 
                         </p>
                     </div>
                 </div>

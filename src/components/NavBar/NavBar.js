@@ -31,19 +31,14 @@ class NavBar extends React.PureComponent {
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/" className="nav-link" onClick={() => this.setState({open: false})}>
-                                Projects
-                            </Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link to="/" className="nav-link" onClick={() => this.setState({open: false})}>
+                            <a href="#about" className="nav-link" onClick={() => this.setState({open:false})}>
                                 About
-                            </Link>
+                            </a>
                         </li>
                         <li className="nav-item">
-                            <Link to="/" className="nav-link" onClick={() => this.setState({open: false})}>
-                                Contact
-                            </Link>
+                            <a href="#projects" className="nav-link" onClick={() => this.setState({open:false})}>
+                                Projects
+                            </a>
                         </li>
                     </ul>
                 </nav>
