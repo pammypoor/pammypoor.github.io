@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/pammypoor/pammypoor.github.io/static/css/main.24735940.css",
-    "main.js": "/pammypoor/pammypoor.github.io/static/js/main.25f10f07.js",
+    "main.css": "/pammypoor/pammypoor.github.io/static/css/main.5a46812a.css",
+    "main.js": "/pammypoor/pammypoor.github.io/static/js/main.f8d34f94.js",
     "static/js/787.62c83def.chunk.js": "/pammypoor/pammypoor.github.io/static/js/787.62c83def.chunk.js",
+    "static/media/headshot.PNG": "/pammypoor/pammypoor.github.io/static/media/headshot.3ebb6e0e7302d36d988c.PNG",
     "index.html": "/pammypoor/pammypoor.github.io/index.html",
-    "main.24735940.css.map": "/pammypoor/pammypoor.github.io/static/css/main.24735940.css.map",
-    "main.25f10f07.js.map": "/pammypoor/pammypoor.github.io/static/js/main.25f10f07.js.map",
+    "main.5a46812a.css.map": "/pammypoor/pammypoor.github.io/static/css/main.5a46812a.css.map",
+    "main.f8d34f94.js.map": "/pammypoor/pammypoor.github.io/static/js/main.f8d34f94.js.map",
     "787.62c83def.chunk.js.map": "/pammypoor/pammypoor.github.io/static/js/787.62c83def.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.24735940.css",
-    "static/js/main.25f10f07.js"
+    "static/css/main.5a46812a.css",
+    "static/js/main.f8d34f94.js"
   ]
 }
