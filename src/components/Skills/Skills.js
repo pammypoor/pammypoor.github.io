@@ -6,10 +6,6 @@ import "./Skills.css";
 class Skills extends React.PureComponent {
     constructor(props){
         super(props);
-
-        this.skills = {
-
-        }
     }
     render() {
         const skills = [
@@ -23,7 +19,6 @@ class Skills extends React.PureComponent {
 
         return (
             <div className = "skills-container">
-                HI
                 <SkillBar skills={skills}/>
             </div>
         )
