@@ -17,9 +17,29 @@ class Skills extends React.PureComponent {
             { type: 'HTML', level: 60 }
           ];
 
+          const colors = {
+            bar: {
+              hue: 45,
+              saturation: 60,
+              level: {
+                minimum: 50,
+                maximum: 100
+              }
+            },
+            background: {
+                hue: 0,
+                saturation: 25,
+                level: {
+                  minimum: 50,
+                  maximum: 100
+                }
+                
+              }
+          };
+
         return (
             <div className = "skills-container">
-                <SkillBar skills={skills}/>
+                <SkillBar skills={skills} colors = {colors}/>
             </div>
         )
     }
