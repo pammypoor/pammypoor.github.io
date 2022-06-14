@@ -77,3 +77,125 @@
     list-style-type: none;
     padding-right: 25px;
 }
+
+.cv_download_button {
+    align-items: center;
+    background-clip: padding-box;
+    background-color:#D27D2D;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 15px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    user-select: none;
+    -webkit-user-select: none;
+    width: auto;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+}
+
+.cv_download_button:hover, .cv_download_button:focus {
+    background-color: #CC5500;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.cv_download_button:hover {
+    transform: translateY(-1px);
+}
+
+.cv_download_button:active {
+    transform: translateY(0);
+}
+
+.about-right-content a {
+    text-decoration: none;
+    color: #D27D2D;
+}
+
+.about-right-content a:hover {
+    color: #CC5500;
+}
+
+@media only screen and (max-width: 600px) {
+    .about-container {
+        display: inline;
+    }
+
+    .about-left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-image: linear-gradient(19deg, #f8f9fa 0%, #f8f9fa 100%); 
+        border-top-left-radius: 1%;
+        border-bottom-left-radius: 1%;
+    }
+    
+    .about-left-inside {
+        padding: 10px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 2%;
+        color: #283618;
+    }
+    
+    .about-left-inside h2 {
+        color: #ca6702;
+    }
+    
+    .about-right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #e9ecef;
+        border-top-right-radius: 1%;
+        border-bottom-right-radius: 1%;
+        padding: 25px; 
+    }
+    
+    .about-right h1 {
+        color: #283618;
+    }
+    
+    .about-right h2 {
+        color: #283618;
+    }
+    
+    
+    .about-right p {
+        text-align: left;
+        color: #283618;
+    }
+    
+    .about-img {
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        border-radius: 3%;
+        margin-left: 20px;
+    }
+    
+    .about-img img {
+        display: block;
+        width: 315px;
+        margin: -10px 0px 0px -65px;
+    }
+    
+    .icons {
+        display: flex;
+        justify-content: center;
+        margin-right: 30px;
+    }
+    
+    .icons li {
+        list-style-type: none;
+        padding-right: 25px;
+    }
+  }

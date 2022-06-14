@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../../components/Header/Header";
+import Timeline from "../../components/Timeline/Timeline";
 import Skills from "../../components/Skills/Skills";
 import AboutMe from "../../components/AboutMe/AboutMe";
 import Projects from "../../components/Projects/Projects";
@@ -17,7 +18,12 @@ class Home extends React.PureComponent {
                     <div className="aboutme-wrapper">
                         {<AboutMe/>}
                     </div>
+                    <div classname="timeline-wrapper">
+                        <h2>My Timeline</h2>
+                        {<Timeline/>}
+                    </div>
                     <div className="skills-wrapper">
+                        <h2>Skills</h2>
                         {<Skills/>}
                     </div>
                 </div>

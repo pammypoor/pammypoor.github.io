@@ -12,14 +12,12 @@ class NavBar extends React.PureComponent {
         }
     }
 
-
-
     render() {
         return (
             <div className="navbar-wrapper">
                 <nav className = "navbar">
                     <Link to="/" className = "nav-logo" onClick={() => this.setState({open: false})}>
-                        Pammy Poor
+                        &#x3c;Pammy Poor &#x2044;&#x3e;
                     </Link>
                     <div onClick={() => this.setState({open: !this.state.open})} className="nav-icon">
                         {this.state.open ? <FiX/> : <FiMenu/>}

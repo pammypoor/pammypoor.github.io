@@ -10,6 +10,7 @@ import Divider from "@mui/material/Divider";
 
 import tresearch from "../../assets/tresearch.png";
 import dispatch from "../../assets/dispatch.png";
+import portfolio from "../../assets/portfolio.png";
 
 import "./ProjectGallery.css";
 class ProjectGallery extends React.PureComponent {
@@ -41,7 +42,7 @@ class ProjectGallery extends React.PureComponent {
                         </Grid>
                         <Grid Grid item xs={6} md={4}>
                             <Card style={{ height: '100%', textAlign: 'left'}}>
-                                <CardMedia component="img" height="150" image = {dispatch} alt = "Dispatch System Main View"/>
+                                <CardMedia component="img" height="150" image = {dispatch} alt = "Dispatch System Home View"/>
                                 <CardContent>
                                     <Typography gutterBottom variant="h5" component="div">
                                         Dispatch System
@@ -52,7 +53,23 @@ class ProjectGallery extends React.PureComponent {
                                     </Typography>
                                 </CardContent>
                                 <CardActions>
-                                    <Button size="small" onClick = {() => {window.open("https://github.com/pammypoor/Tresearch", "_blank")}}>Github</Button>
+                                    <Button size="small" onClick = {() => {window.open("https://github.com/pammypoor/Dispatch-System", "_blank")}}>Github</Button>
+                                </CardActions>
+                            </Card>
+                        </Grid>
+                        <Grid item xs={6} md={4}>
+                            <Card style={{ height: '100%', textAlign: 'left' }}>
+                                <CardMedia component="img" height="150" image = {portfolio} alt = "portfolio about page"/>
+                                <CardContent>
+                                    <Typography gutterBottom variant="h5" component="div">
+                                        Portfolio
+                                    </Typography>
+                                    <Typography variant="body2" color="text.secondary">
+                                        Portfolio website hosted on Github Pages using HTML/CSS/Javascript and React.js.
+                                    </Typography>
+                                </CardContent>
+                                <CardActions>
+                                    <Button size="small" onClick = {() => {window.open("https://github.com/pammypoor/pammypoor.github.io", "_blank")}}>Github</Button>
                                 </CardActions>
                             </Card>
                         </Grid>

@@ -1,6 +1,8 @@
 import React from "react";
 import SkillBar from "react-skillbars";
-
+import {FaReact, FaGitAlt, FaGithub, FaNodeJs} from 'react-icons/fa';
+import {SiMicrosoftazure, SiMysql, SiVisualstudio} from 'react-icons/si';
+import { IconContext } from "react-icons";
 import "./Skills.css";
 
 class Skills extends React.PureComponent {
@@ -14,31 +16,25 @@ class Skills extends React.PureComponent {
           { type: 'Python', level: 75 },
           { type: 'HTML/CSS', level: 60 }
         ];
-        
-        const frameworkSkills = [
-          { type: 'React', level: 100 },
-          { type: 'ASP.NET', level: 90 },
-          { type: 'xUnit', level: 90 }
-        ];
 
-          const colors = {
-            bar: {
-              hue: 40,
-              saturation: 100,
+        const colors = {
+          bar: {
+            hue: 40,
+            saturation: 100,
+            level: {
+              minimum: 50,
+              maximum: 100
+            }
+          },
+          background: {
+              hue: 0,
+              saturation: 25,
               level: {
                 minimum: 50,
                 maximum: 100
               }
-            },
-            background: {
-                hue: 0,
-                saturation: 25,
-                level: {
-                  minimum: 50,
-                  maximum: 100
-                }
-              }
-          };
+            }
+        };
 
         return (
             <div className = "skills-container">
@@ -47,8 +43,13 @@ class Skills extends React.PureComponent {
                 <SkillBar skills={skills} colors = {colors}/>
               </div>
               <div className = "skills-right">
-                <h3>Frameworks</h3>
-                <SkillBar skills={frameworkSkills} colors = {colors}/>
+                <h3>Technologies</h3>
+                <ul className="icons-skills">
+                  <li><a href = "https://azure.microsoft.com/en-us/" target="_blank"><SiMicrosoftazure/></a><a href = "https://git-scm.com/" target="_blank"><FaGitAlt/></a></li>
+                  <li><a href = "https://github.com/pammypoor" target="_blank"><FaGithub/></a><a href = "https://reactjs.org/" target="_blank"><SiMysql/></a></li>
+                  <li><a href = "https://nodejs.org/en/" target="_blank"><FaNodeJs/></a><a href = "https://reactjs.org/" target="_blank"><FaReact/></a></li>
+                  <li><a href = "https://visualstudio.microsoft.com/" target="_blank"><SiVisualstudio/></a></li>          
+                </ul>
               </div>
             </div>
         )

@@ -4,9 +4,31 @@
 }
 
 .about-wrapper {
+    color: #283618;
     margin: 20px 50px 20px 50px;
 }
 
 .skills-wrapper {
+    color: #283618;
     margin: 25px 25vh 0px 25vh;
+}
+
+@media only screen and (max-width: 600px) { 
+    .home-wrapper {
+        height: 100%;
+        margin: 0px auto;
+    }
+    
+    .about-wrapper {
+        margin: 20px 50px 20px 50px;
+    }
+    
+    .skills-wrapper {
+        margin: 20px 0 0 0;
+    }
+
+    .timeline-wrapper {
+        margin: 20px 50px 20px 50px;
+    }
+
 }

@@ -16,8 +16,8 @@ class Projects extends React.PureComponent {
                 <div className="project-gallery-wrapper">
                     {<ProjectGallery/>}
                 </div>
-                
             </div>
+            
         )
     }
 }
