@@ -26,7 +26,7 @@ class AboutMe extends React.PureComponent {
                                 <img src={headshot}/>
                             </div>
                             <h2>Pamela Poor</h2>
-                            <h3>Software Engineer in Test</h3>
+                            <h3>Full Stack Software Developer</h3>
                             <ul class = "icons">
                                 <IconContext.Provider value={{ color: "#283618", size: "2em"}}>
                                     <li><a href = "https://github.com/pammypoor" target="_blank"><FaGithub/></a></li>
@@ -43,9 +43,9 @@ class AboutMe extends React.PureComponent {
                         <TypeAnimation cursor={true} sequence={['Hello!', 5000, '']}  wrapper="h1" repeat = {Infinity}/>
                         <h2>A little bit about me</h2>
                         <p>
-                            Recent graduate of Computer Science from California State University, Long Beach currently working as a software engineer in test at Panasonic Avionics. 
-                            I have experience leading and working in an Agile software development lifecycle as well as experience in SCRUM standups. I'm always learning 
-                            studying new technologies. Check out the languages I know below or head over to my <a href="#projects">projects</a> to take a look at my work.
+                            Software developer located in Southern California currently working as a full stack software developer for VerityStream. I have experience 
+                            working in an Agile software development lifecycle. I'm always learning and studying new technologies. Check out the languages I know or head over to 
+                            my <a href="#projects">projects</a> to take a look at my work. 
                         </p>
                         <p>
                             My personal interests revolve around working with my hands. When I'm not coding, I like to work on my car or building keyboards. 

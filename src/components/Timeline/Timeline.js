@@ -20,7 +20,19 @@ class Timeline extends React.PureComponent {
                         className="vertical-timeline-element--work"
                         contentStyle={{ background: 'rgb(210, 125, 45)', color: '#fff' }}
                         contentArrowStyle={{ borderRight: '7px solid  rgb(210, 125, 45)' }}
-                        date="June 2022 - Present"
+                        date="August 2022 - Present"
+                        iconStyle={{ background: 'rgb(210, 125, 45)', color: '#fff' }}
+                        icon={<FaBriefcase/>}
+                    >
+                    <h3 className="vertical-timeline-element-title">Full Stack Software Developer At VerityStream</h3>
+                    <h4 className="vertical-timeline-element-subtitle">San Diego, California</h4>
+                    <p></p>
+                    </VerticalTimelineElement>
+                    <VerticalTimelineElement
+                        className="vertical-timeline-element--work"
+                        contentStyle={{ background: 'rgb(210, 125, 45)', color: '#fff' }}
+                        contentArrowStyle={{ borderRight: '7px solid  rgb(210, 125, 45)' }}
+                        date="June 2022 - August 2022"
                         iconStyle={{ background: 'rgb(210, 125, 45)', color: '#fff' }}
                         icon={<FaBriefcase/>}
                     >

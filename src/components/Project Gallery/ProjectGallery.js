@@ -40,23 +40,7 @@ class ProjectGallery extends React.PureComponent {
                                 </CardActions>
                             </Card>
                         </Grid>
-                        <Grid Grid item xs={6} md={4}>
-                            <Card style={{ height: '100%', textAlign: 'left'}}>
-                                <CardMedia component="img" height="150" image = {dispatch} alt = "Dispatch System Home View"/>
-                                <CardContent>
-                                    <Typography gutterBottom variant="h5" component="div">
-                                        Dispatch System
-                                    </Typography>
-                                    <Typography variant="body2" color="text.secondary">
-                                        .NET Windows WPF Desktop application responsible for tracking shipping containers, maintaining billing records and generating reports. Project
-                                        follows MVVM architecture with datastore hosted on Azure.
-                                    </Typography>
-                                </CardContent>
-                                <CardActions>
-                                    <Button size="small" onClick = {() => {window.open("https://github.com/pammypoor/Dispatch-System", "_blank")}}>Github</Button>
-                                </CardActions>
-                            </Card>
-                        </Grid>
+                        
                         <Grid item xs={6} md={4}>
                             <Card style={{ height: '100%', textAlign: 'left' }}>
                                 <CardMedia component="img" height="150" image = {portfolio} alt = "portfolio about page"/>
