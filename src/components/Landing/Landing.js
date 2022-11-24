@@ -30,7 +30,7 @@ class Landing extends React.PureComponent {
                             <button type="submit" class="read-more"><a href="#about">Read More</a></button>
                             </div>
                         </Col>
-                        <Col className="d-flex align-items-center" lg={4}>
+                        <Col className="d-flex align-items-center" lg={5}>
                             <div>
                                 <img src={headshot} className="img-fluid rounded w-100"/>
                                 <h4>Pamela Poor</h4>

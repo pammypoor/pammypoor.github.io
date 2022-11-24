@@ -36,6 +36,11 @@
     color: #354f52;
 }
 
+.landing-container  button:hover, .landing-container  button:hover > a{
+    background-color: #e6ccb2;
+    color: white;
+}
+
 @media only screen and (max-width: 600px) {
     .landing-container, .landing-container .container, .landing-container .row, .landing-container .col {
         height: inherit;
