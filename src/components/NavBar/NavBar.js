@@ -17,7 +17,7 @@ class NavBar extends React.PureComponent {
             <div className="navbar-wrapper">
                 <nav className = "navbar">
                     <Link to="/" className = "nav-logo" onClick={() => this.setState({open: false})}>
-                        &#x3c;Pammy Poor &#x2044;&#x3e;
+                        Pamela Poor
                     </Link>
                     <div onClick={() => this.setState({open: !this.state.open})} className="nav-icon">
                         {this.state.open ? <FiX/> : <FiMenu/>}

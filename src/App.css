@@ -37,3 +37,9 @@
   }
 }
 
+body {
+  background-color: #faf8f1 !important;
+  font: 16px/24px "chaparral-pro", georgia, serif !important;
+  
+  transition: background-color 1s ease;
+}

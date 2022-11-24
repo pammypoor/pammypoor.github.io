@@ -1,9 +1,10 @@
 import React from "react";
 import Header from "../../components/Header/Header";
-import Timeline from "../../components/Timeline/Timeline";
+import Timeline from "../../components/Timeline/AboutTimeline";
 import Skills from "../../components/Skills/Skills";
 import AboutMe from "../../components/AboutMe/AboutMe";
 import Projects from "../../components/Projects/Projects";
+import Landing from "../../components/Landing/Landing";
 
 import "./Home.css";
 
@@ -14,16 +15,16 @@ class Home extends React.PureComponent {
                 <div  className = "home-header">
                     {<Header/>}
                 </div>
+                <div className="landing-wrapper">
+                    {<Landing/>}
+                </div>
                 <div className = "about-wrapper" id = "about">
                     <div className="aboutme-wrapper">
+                        <h2>About Me</h2>
                         {<AboutMe/>}
                     </div>
-                    <div classname="timeline-wrapper">
-                        <h2>My Timeline</h2>
-                        {<Timeline/>}
-                    </div>
                     <div className="skills-wrapper">
-                        <h2>Skills</h2>
+                        <h2>My Tech Stack</h2>
                         {<Skills/>}
                     </div>
                 </div>

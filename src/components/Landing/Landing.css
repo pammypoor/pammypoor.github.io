@@ -1,0 +1,55 @@
+
+.landing-container, .landing-container .container, .landing-container .row, .landing-container .col {
+    height: 90vh;
+}
+
+
+
+.icons {
+    display: flex;
+    justify-content: center;
+    margin-right: 30px;
+}
+
+.icons li {
+    list-style-type: none;
+    padding-right: 25px;
+    font-size: 10px;
+}
+
+.landing-container {
+    color: #354f52;
+}
+
+.landing-container h1 {
+    color: #6c584c;
+}
+
+.landing-container .read-more {
+    background-color: transparent;
+    width: 15rem;
+    height:40px;
+}
+
+.landing-container .read-more a{
+    text-decoration: none;
+    color: #354f52;
+}
+
+@media only screen and (max-width: 600px) {
+    .landing-container, .landing-container .container, .landing-container .row, .landing-container .col {
+        height: inherit;
+    }
+    .icons {
+        display: flex;
+        justify-content: center;
+        margin-right: 30px;
+    }
+    
+    .icons li {
+        list-style-type: none;
+        padding-right: 25px;
+    }
+  }
+
+ 

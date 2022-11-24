@@ -1,0 +1,12 @@
+.vertical-timeline-element-date {
+    color: black;
+}
+
+.timeline-container {
+    margin: 20px 0 0 0;
+}
+
+.timeline-container .timeline-item-dateinner {
+    background-color: #432818 !important;
+}
+
