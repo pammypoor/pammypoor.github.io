@@ -27,7 +27,9 @@ class Landing extends React.PureComponent {
                             <div>
                             <TypeAnimation cursor={true} sequence={['Hello', ,10000]}  wrapper="h1" repeat = {1}/>
                             <h4>I'm a Full Stack Software Developer</h4>
-                            <button type="submit" class="read-more"><a href="#about">Read More</a></button>
+                            <div className="landing-buttons">
+                                <button type="submit" class="read-more"><a href="#about">Read More</a></button>
+                            </div>
                             </div>
                         </Col>
                         <Col className="d-flex align-items-center" lg={5}>

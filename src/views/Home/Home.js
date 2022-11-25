@@ -20,7 +20,7 @@ class Home extends React.PureComponent {
                 </div>
                 <div className = "about-wrapper" id = "about">
                     <div className="aboutme-wrapper">
-                        <h2>About Me</h2>
+                        <h2>Get To Know Me</h2>
                         {<AboutMe/>}
                     </div>
                     <div className="skills-wrapper">
