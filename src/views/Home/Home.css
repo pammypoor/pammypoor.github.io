@@ -3,32 +3,3 @@
     margin: 0px auto;
 }
 
-.about-wrapper {
-    color: #283618;
-    margin: 20px 80px 20px 80px;
-}
-
-
-.skills-wrapper {
-    color: #283618;
-}
-
-@media only screen and (max-width: 700) { 
-    .home-wrapper {
-        height: 100%;
-        margin: 0px auto;
-    }
-
-    .landing-wrapper {
-        margin: 20px 50px 20px 50px;
-    }
-    
-    .about-wrapper {
-        margin: 20px 50px 20px 50px;
-    }
-    
-    .skills-wrapper {
-        margin: 20px 0 0 0;
-    }
-
-}
