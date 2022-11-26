@@ -22,7 +22,7 @@ class Home extends React.PureComponent {
                 <div className="sticky--button-wrapper">
                     {<ScrollButton/>}
                 </div>
-                <div className="landing-wrapper">
+                <div className="landing-wrapper mx-3">
                     {<Landing/>}
                 </div>
                 <div className = "about-wrapper" id = "about">
