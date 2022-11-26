@@ -24,20 +24,18 @@ class Landing extends React.PureComponent {
                 <Container>
                     <Row>               
                         <Col  className="d-flex align-items-center text-start">
-                            <div>
-                            <TypeAnimation cursor={true} sequence={['Hello', ,10000]}  wrapper="h1" repeat = {1}/>
-                            <h4>I'm a Full Stack Software Developer</h4>
-                            <div className="landing-buttons">
-                                <button type="submit" class="read-more"><a href="#about">Read More</a></button>
-                            </div>
+                            <div className="landing-intro">
+                                <TypeAnimation cursor={true} sequence={['Hello, I\'m Pamela', ,10000]}  wrapper="h1" repeat = {1}/>
+                                <h4 className="my-3">I'm a Full Stack Software Developer</h4>
+                                <div className="landing-buttons">
+                                    <button type="submit" class="read-more"><a href="#about">Read More</a></button>
+                                </div>
                             </div>
                         </Col>
                         <Col className="d-flex align-items-center" lg={5}>
                             <div>
                                 <img src={headshot} className="img-fluid rounded w-100"/>
-                                <h4>Pamela Poor</h4>
-                                <h6>Full Stack Software Developer at HealthStream</h6>
-                                <ul class = "icons">
+                                <ul class = "icons d-block d-sm-none">
                                     <IconContext.Provider value={{ color: "#283618", size: "2em"}}>
                                         <li><a href = "https://github.com/pammypoor" target="_blank"><FaGithub/></a></li>
                                         <li><a href = "https://www.linkedin.com/in/pammypoor/" target="_blank"><FaLinkedin/></a></li>

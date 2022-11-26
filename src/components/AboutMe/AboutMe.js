@@ -10,6 +10,7 @@ import AnimatedText from 'react-animated-text-content';
 
 import "./AboutMe.css";
 import resume from "../../assets/Pamela_Poor.pdf";
+import Skills from "../Skills/Skills";
 
 class AboutMe extends React.PureComponent {
     constructor(props){
@@ -23,7 +24,7 @@ class AboutMe extends React.PureComponent {
             <div className = "about-container">
                 <Container>
                     <Row>
-                        <Col className="timeline">
+                        <Col className="timeline d-none d-sm-block">
                             {<AboutTimeline/>}
                         </Col>
                         <Col>
@@ -33,20 +34,14 @@ class AboutMe extends React.PureComponent {
                             x: '200px',
                             y: '-20px',
                             scale: 1.1,
-                            ease: 'ease-in-out',
+                            ease: 'ease',
                         }}
-                        animationType="float"
-                        interval={0.06}
+                        interval={0.01}
                         duration={0.8}
-                        tag="p"
-                        className="animated-paragraph"
-                        includeWhiteSpaces
-                        threshold={0.1}
-                        rootMargin="20%"
                         >
-                            TEST
+                            TEST TEST TEST 
                         </AnimatedText>
-
+                        
 
                         </Col>
                     </Row>

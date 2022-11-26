@@ -18,17 +18,19 @@
 }
 
 .landing-container {
-    color: #354f52;
+    color: #6c584c;
 }
 
 .landing-container h1 {
-    color: #6c584c;
+    color: #6a994e;
 }
+
 
 .landing-container .read-more {
     background-color: transparent;
     width: 15rem;
     height:40px;
+    border: 1px solid #6c584c;
 }
 
 .landing-container .read-more a{
@@ -37,8 +39,9 @@
 }
 
 .landing-container  button:hover, .landing-container  button:hover > a{
-    background-color: #e6ccb2;
-    color: white;
+    background-color: #726953;
+    color: #f2e8cf;
+    border: 1px solid #726953;
 }
 
 @media only screen and (max-width: 600px) {

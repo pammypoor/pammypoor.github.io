@@ -5,8 +5,9 @@ import Skills from "../../components/Skills/Skills";
 import AboutMe from "../../components/AboutMe/AboutMe";
 import Projects from "../../components/Projects/Projects";
 import Landing from "../../components/Landing/Landing";
-
+import ScrollButton from "../../components/ScrollButton/ScrollButton";
 import "./Home.css";
+import StickySocials from "../../components/StickySocials/StickySocials";
 
 class Home extends React.PureComponent {
     render() {
@@ -14,6 +15,12 @@ class Home extends React.PureComponent {
             <div className = "home-wrapper">
                 <div  className = "home-header">
                     {<Header/>}
+                </div>
+                <div className="sticky-socials-wrapper">
+                    {<StickySocials/>}
+                </div>
+                <div className="sticky--button-wrapper">
+                    {<ScrollButton/>}
                 </div>
                 <div className="landing-wrapper">
                     {<Landing/>}
@@ -23,7 +30,7 @@ class Home extends React.PureComponent {
                         <h2>Get To Know Me</h2>
                         {<AboutMe/>}
                     </div>
-                    <div className="skills-wrapper">
+                    <div className="skills-wrapper" id="skills">
                         <h2>My Tech Stack</h2>
                         {<Skills/>}
                     </div>

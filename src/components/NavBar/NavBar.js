@@ -24,13 +24,18 @@ class NavBar extends React.PureComponent {
                     </div>
                     <ul className = { this.state.open ? 'nav-links active': 'nav-links'}>
                         <li className="nav-item">
-                            <Link to="/" className="nav-link" onClick={() => this.setState({open: false})}>
+                            <a to="/" className="nav-link" onClick={() => this.setState({open: false})}>
                                 Home
-                            </Link>
+                            </a>
                         </li>
                         <li className="nav-item">
                             <a href="#about" className="nav-link" onClick={() => this.setState({open:false})}>
                                 About
+                            </a>
+                        </li>
+                        <li className="nav-item">
+                            <a href="#skills" className="nav-link" onClick={() => this.setState({open:false})}>
+                                Skills
                             </a>
                         </li>
                         <li className="nav-item">

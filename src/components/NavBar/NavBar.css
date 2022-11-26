@@ -15,22 +15,31 @@
     color: #ca6702 ;
 }
 
+.nav-logo:hover {
+    color: #6a994e;
+}
+
 .nav-links {
     display: grid;
     grid-template-columns: repeat(6, auto);
     grid-gap: 20px;
     list-style: none;
+    color: #6c584c;
     
 }
 
-.nav-link:hover {
+.nav-item:hover{
     color: #ca6702;
+    text-decoration-style: wavy;
+    cursor: pointer;
+    
 }
 
 .nav-link {
     text-decoration: none;
     transition: 0.2s all;
     color: #344e41;
+    
 }
 
 .nav-icon{

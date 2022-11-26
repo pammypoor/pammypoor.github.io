@@ -1,0 +1,25 @@
+.sticky-socials-links{
+    position: fixed;
+    top: 70%;
+}
+
+.sticky-socials-links {
+    list-style: none;
+    font-size: 2rem;
+}
+
+.sticky-socials-link {
+    color: #6c584c;
+}
+
+.sticky-socials-link:hover {
+    color: #6a994e;
+}
+
+.sticky-socials-container .vl {
+    border-left: 2px solid #6c584c;
+    height: 30vh;
+    position: fixed;
+    top: 87%;
+    left: 45px;
+}
