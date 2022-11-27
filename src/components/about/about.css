@@ -1,0 +1,52 @@
+.about-timeline {
+    text-align: left;
+    overflow: scroll;
+}
+
+.about-timeline::-webkit-scrollbar {
+    display: none;
+}
+
+.about-timeline ul label {
+    background-color: var(--bs-darker-color);
+    outline: 7px solid var(--bs-dark-color);
+
+}
+
+.about-timeline ul:before {
+    background-color: var(--bs-darkest-color);
+}
+
+.about-timeline ul li {
+    color: var(--bs-dark-color);
+    margin-top:10px;
+}
+
+.about-timeline ul li p {
+    color: white;
+    background-color: var(--bs-secondary-color);
+}
+
+.about-timeline ul li h3, .about-timeline ul li h4 {
+    color: var(--bs-darker-color);
+}
+
+
+.about-container .download-resume {
+    background-color: transparent;
+    width: 15rem;
+    height:40px;
+    border: 1px solid var(--bs-dark-color);
+}
+
+.about-container  button:hover {
+    border: 2px solid var(--bs-dark-color);
+}
+
+.about-me h6, p {
+    color: var(--bs-darkest-color);
+}
+
+.about-me h2 {
+    color: var(--bs-darkest-color);
+}

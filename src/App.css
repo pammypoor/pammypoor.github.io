@@ -1,3 +1,14 @@
+:root {
+  --bs-body-background-color: #f5f1ed;
+  --bs-primary-color: #ca6702;
+  --bs-secondary-color: #6a994e;
+  --bs-dark-color: #6c584c;
+  --bs-darker-color: #5a3b16;
+  --bs-darkest-color: #110703;
+  --bs-gray: #343a40;
+}
+
+
 .App {
   text-align: center;
 }
@@ -38,8 +49,12 @@
 }
 
 body {
-  background-color: #faf8f1 !important;
+  background-color: var(--bs-body-background-color) !important;
   font: 16px/24px "chaparral-pro", georgia, serif !important;
   
   transition: background-color 1s ease;
+}
+
+.cursor-pointer{
+  cursor: pointer;
 }

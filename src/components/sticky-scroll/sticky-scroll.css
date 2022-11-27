@@ -1,0 +1,25 @@
+
+
+.sticky-scroll-button {
+    overflow-y: scroll;   
+}
+
+.sticky-scroll-button .btn{
+    background-color: transparent !important;
+    border: 0px;
+}
+  
+.sticky-scroll-button button {
+    position: fixed; 
+    left: 90%;
+    bottom: 8%;
+    height: 20px;
+    font-size: 1.25rem;
+    z-index: 1;
+    cursor: pointer;
+    color: var(--bs-dark-color);
+}
+
+.sticky-scroll-button button:hover {
+    color: var(--bs-secondary-color);
+}

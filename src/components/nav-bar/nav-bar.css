@@ -1,0 +1,32 @@
+.nav-bar .logo {
+    color: var(--bs-primary-color);
+    font-size: 1.25rem;
+}
+
+.nav-bar-toggle{
+    color: var(--bs-dark-color) !important;
+    border-color: transparent;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-nav .nav-link {
+    color: var(--bs-dark-color) !important;
+    font-size: 1.25rem;
+}
+
+.nav-bar .nav-item a {
+    color: inherit;
+}
+
+.navbar-nav .nav-link:hover{
+    color: var(--bs-primary-color) !important;
+} 
+
