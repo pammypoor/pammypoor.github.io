@@ -14,15 +14,13 @@ class Landing extends React.PureComponent {
     render() {
 
         const landingIntro = (
-            <div className="landing-intro mx-5 w-100">
-                <TypeAnimation cursor={true} sequence={['Hello,', ,10000]}  wrapper="h6" repeat = {1}/>
-                <div className="landing-intro-name my-2">
-                    <h1 className="d-inline">I'm </h1>
-                    <h1 className="gradient-text d-inline">Pamela Poor</h1>
-                </div>
-                <h4 className="my-3">Fullstack Developer</h4>
-                <div className="landing-buttons">
-                    <button type="submit" class="read-more" onClick={() => window.open("#about", "_self")}>Read More</button>
+            <div className="landing-intro d-flex justify-content-center px-5">
+                <div className="d-flex flex-column">
+                    <span className="fs-2 gradient-text">Pamela Poor</span>
+                    <span className="fs-6 py-2">Fullstack Developer</span>
+                    <div className="landing-buttons">
+                        <button type="submit" class="read-more" onClick={() => window.open("#about", "_self")}><span>Read More</span></button>
+                    </div>
                 </div>
             </div>
         )
@@ -55,11 +53,11 @@ class Landing extends React.PureComponent {
         )
 
         const landingContentMobile = (
-            <div className="landing-content d-flex flex-column h-100">
-                <div className="p-2 w-100 align-items-center text-start">
+            <div className="landing-content d-flex flex-column justify-content-center h-100">
+                <div className="align-items-center text-start py-3">
                     {landingIntro}
                 </div>
-                <div className="p-2 w-100 ">
+                <div className="py-3">
                     {landingPhoto}
                 </div>
             </div>
@@ -67,11 +65,11 @@ class Landing extends React.PureComponent {
 
 
         return (
-            <div className = "landing-container ">
+            <div className = "landing-container h-100">
                 <div className=" d-none d-sm-block h-100 mx-5">
                     {landingContent}
                 </div>
-                <div className="d-block d-sm-none">
+                <div className="d-block d-sm-none h-100">
                     {landingContentMobile}
                 </div>
             </div>

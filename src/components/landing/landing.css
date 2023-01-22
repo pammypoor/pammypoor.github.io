@@ -15,16 +15,16 @@
 }
 
 .landing-container {
-    color: var(--bs-dark-color);
+    color: var(--bs-gray06);
 }
 
 .landing-container h6 {
-    color: var(--bs-secondary-color);
+    color: var(--bs-gray04);
 }
 
 .gradient-text {
 	text-transform: uppercase;
-	background: linear-gradient(to right, #538080 0%, #719c20 100%);
+	background: linear-gradient(to right, #b08968 0%, #432818 100%);
     background-clip: inherit;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -33,19 +33,40 @@
 
 .landing-container .read-more {
     background-color: transparent;
-    width: 15rem;
-    height:40px;
-    border: 1px solid var(--bs-dark-color);
-}
-
-.landing-container .read-more a{
-    text-decoration: none;
-    color: var(--bs-dark-color);
+    width: 10rem;
+    height:30px;
+    color: inherit;
+    border: 1px solid;
 }
 
 .landing-container  button:hover {
-    border: 2px solid var(--bs-dark-color);
+    border: 2px solid ;
 }
+
+.landing-container span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.landing-container button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .landing-container button:hover span {
+    padding-right: 25px;
+  }
+  
+  .landing-container button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
 
 @media only screen and (max-width: 600px) {
     .landing-container, .landing-container .container, .landing-container .row, .landing-container .col {

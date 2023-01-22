@@ -7,10 +7,6 @@ import StickySocials from "../../components/sticky-socials/sticky-socials";
 
 import "./Home.css";
 
-
-
-
-
 class Home extends React.PureComponent {
     render() {
         return (

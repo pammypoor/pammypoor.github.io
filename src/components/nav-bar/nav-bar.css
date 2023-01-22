@@ -3,6 +3,10 @@
     font-size: 1.25rem;
 }
 
+.navbar-brand:hover, .navbar-brand:focus {
+    color:  var(--bs-primary-color) !important;
+}
+
 .nav-bar-toggle{
     color: var(--bs-dark-color) !important;
     border-color: transparent;

@@ -1,11 +1,17 @@
 :root {
-  --bs-body-background-color: #f5f1ed;
+  --bs-body-background-color: #F5F5F5;
   --bs-primary-color: #ca6702;
   --bs-secondary-color: #6a994e;
   --bs-dark-color: #6c584c;
   --bs-darker-color: #5a3b16;
   --bs-darkest-color: #110703;
-  --bs-gray: #343a40;
+  --bs-gray00: #f8f8f8
+  --bs-gray01: #dbe1e8;
+  --bs-gray02: #b2becd;
+  --bs-gray03: #6c7983;
+  --bs-gray04: #454e56;
+  --bs-gray05: #2a2e35;
+  --bs-gray06: #12181b;
 }
 
 
