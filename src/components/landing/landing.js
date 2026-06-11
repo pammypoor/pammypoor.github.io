@@ -17,7 +17,7 @@ class Landing extends React.PureComponent {
             <div className="landing-intro d-flex justify-content-center px-5">
                 <div className="d-flex flex-column">
                     <span className="fs-2 gradient-text">Pamela Poor</span>
-                    <span className="fs-6 py-2">Fullstack Developer</span>
+                    <span className="fs-6 py-2">Software Engineer</span>
                     <div className="landing-buttons">
                         <button type="submit" class="read-more" onClick={() => window.open("#about", "_self")}><span>Read More</span></button>
                     </div>

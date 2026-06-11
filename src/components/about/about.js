@@ -33,27 +33,33 @@ class About extends React.PureComponent {
 
         const timeLine = (
             <Timeline>
-                <Event interval={"Aug 2022 – Present"} title={"Fullstack Software Developer"} subtitle={"HealthStream"}>
+                <Event interval={"May 2026 – Present"} title={"Software Engineer"} subtitle={"Costar Group"}>
+                    <span className="tag">C#</span>
+                    <span className="tag">GraphQL</span>
+                    <span className="tag">React</span>
+                    <span className="tag">.NET</span>
+                    <span className="tag">Linq</span>
+                </Event>
+                <Event interval={"Aug 2022 – May 2026"} title={"Software Developer II"} subtitle={"HealthStream"}>
                     <span className="tag">C#</span>
                     <span className="tag">EF Core</span>
                     <span className="tag">Angular</span>
                     <span className="tag">Typescript</span>
                     <span className="tag">HTML/CSS</span>
-                    <span className="tag">Azure</span>
+                    <span className="tag">Microsft Azure</span>
                     <span className="tag">Microsoft Sql Server</span>
                     <span className="tag">.NET</span>
+                    <span className="tag">Linq</span>
+                    <h6>Designed and developed greenfield cloud based full stack application using C#, .NET 8, Angular, SQL Server and Microsoft Azure.</h6>
+                    <br/>
+                    <h6>Implemented asynchronous processing and background jobs with Hangfire, supporting scheduled tasks, external data synchronization, and event driven tasks.</h6>
+                    <br/>
+                    <h6>Developed real-time notification platform using SignalR, enabling transactional and event driven email and in-app notifications.</h6>
                 </Event>
-                <Event interval={"May 2022 – Aug 2022"} title={"Software Engineer in Test"} subtitle={"Panasonic Avionics"}>
-                    <span className="tag">Linux</span>
-                    <span className="tag">MySQL</span>
+                <Event interval={"Aug 2019 – May 2022"} title={"B.S in Computer Science"} subtitle={"California State University, Long Beach"}>
+                    <h6>Affiliations: Society of Women Engineers (SWE), Women in Computing (WiC)</h6>
+                    <h6>Honors: Deans List</h6>
                 </Event>
-                <Event interval={"Jan 2022 – May 2022"} title={"Software Engineer Intern"} subtitle={"E & TL Corp"}>
-                    <span className="tag">C#</span>
-                    <span className="tag">xUnit</span>
-                    <span className="tag">Azure</span>
-                    <span className="tag">.NET</span>
-                </Event>
-                <Event interval={"Aug 2019 – May 2022"} title={"B.S in Computer Science"} subtitle={"California State University, Long Beach"} />
             </Timeline>
         )
 
@@ -68,12 +74,11 @@ class About extends React.PureComponent {
                         <LeftAniDiv>    
                             <div className="about-me p-3 h-100">
                                 <h2>Hi, I'm Pamela</h2>
-                                <p className="text-start">I'm Pamela, a passionate Software Developer from Southern California currently working at <a href="https://www.healthstream.com/" target="_blank">HealthStream</a> as a Full Stack 
-                                Software Developer, where I implement software solutions for healthcare adnimistration and credentialing.</p>
+                                <p className="text-start">I'm Pamela, a passionate Software Engineer from Southern California currently working at Costar Group. I have 4+ years of experience in full stack development working with C#, .NET backend and React/Angular frontend frameworks.</p>
 
                                 <p className="text-start">When I'm not working, I love to work on my ever-growing list of hobbies. Currently, I am interested in building keyboards and messing around with
-                                    my Raspberry Pi. Take a look at my <a href="https://www.healthstream.com/" target="_blank">Github Page</a>. I'm always looking to learn and explore new technologies.</p>
-                                <button type="submit" class="download-resume" onClick={saveResume}>Download Resume</button>
+                                    my Raspberry Pi. Take a look at my <a href="https://github.com/pammypoor" target="_blank">Github Page</a>. I'm always looking to learn and explore new technologies.</p>
+                                {/* <button type="submit" class="download-resume" onClick={saveResume}>Download Resume</button> */}
                             </div>
                         </LeftAniDiv>   
                     </div>

@@ -24,11 +24,11 @@ class StickySocials extends React.PureComponent {
                             <FaLinkedin/>
                         </a>
                     </li>
-                    <li className="sticky-socials-item my-3">
+                    {/* <li className="sticky-socials-item my-3">
                         <a href="#about" className="sticky-socials-link">
                             <FaInstagram/>
                         </a>
-                    </li>
+                    </li> */}
                 </ul>
             </div>
         )

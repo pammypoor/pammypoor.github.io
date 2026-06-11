@@ -26,9 +26,9 @@ class NavBar extends React.PureComponent {
                     </Navbar.Toggle>
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="ms-auto">
-                            <Nav.Link href="#about" className="me-auto mx-4 nav-item">ABOUT</Nav.Link>
-                            <Nav.Link href="#skills" className="me-auto mx-4 nav-item">SKILLS</Nav.Link>
-                            <Nav.Link href="#projects" className="me-auto mx-4 nav-item">PROJECTS</Nav.Link>
+                            {/* <Nav.Link href="#about" className="me-auto mx-4 nav-item">ABOUT</Nav.Link> */}
+                            {/* <Nav.Link href="#skills" className="me-auto mx-4 nav-item">SKILLS</Nav.Link> */}
+                            {/* <Nav.Link href="#projects" className="me-auto mx-4 nav-item">PROJECTS</Nav.Link> */}
                         </Nav>
                     </Navbar.Collapse>
                     </Navbar> 
